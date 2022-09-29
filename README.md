@@ -6,7 +6,7 @@
 Space exploration involves overcoming numerous challenges: extreme gravity, disrupted sleep and circadian rhythms, limited supplies, and access to medical care, etc. Your challenge is to design a platform that allows users to explore space travel stresses, understand how diverse organisms deal with these stresses, and then build a “Space Biology Superhero” by combining features from these organisms.
 ### Background
 [![Build a Space Biology Superhero | NASA Space Apps Challenge
-](https://img.youtube.com/vi/Y_PvpipLQGs/0.jpg)](hhttps://www.youtube.com/watch?v=Y_PvpipLQGs)
+](https://img.youtube.com/vi/Y_PvpipLQGs/0.jpg)](https://www.youtube.com/watch?v=Y_PvpipLQGs)
 
 On Earth we are already superheroes with astounding abilities. Overcoming the gravity of a 5,973,600,000,000,000,000,000,000 kg planet? No problem! Synchronizing our metabolism to the comings and goings of a G-type main-sequence star (a.k.a. the Sun)? Done! Breathing in the waste gases of algae and plants? You’re doing it right now!
 
