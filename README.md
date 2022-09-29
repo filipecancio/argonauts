@@ -33,3 +33,28 @@ Advancing the field to enable deep-space exploration
 For data and resources related to this challenge, refer to the Resources tab at the top of the page. More resources may be added before the hackathon begins.
 
 > NASA does not endorse any non-U.S. Government entity and is not responsible for information contained on non-U.S. Government websites. For non-U.S. Government websites, participants must comply with any data use parameters of that specific website.
+
+## DESAFIO: Construa um super-herói espacial biológico 🐛
+
+### O desafio
+A exploração espacial envolve a superação de vários desafios: gravidade extrema, sono interrompido e ritmos circadianos, suprimentos limitados e acesso a cuidados médicos, etc. Seu desafio é projetar uma plataforma que permita aos usuários explorar as tensões das viagens espaciais, entender como diversos organismos lidam com isso estressa, e então construir um“Super-herói da Biologia Espacial” combinando características desses organismos.
+
+### Fundo
+Na Terra já somos
+super-heróis com habilidades surpreendentes. Superar a gravidade de um planeta de 5.973.600.000.000.000.000.000.000 kg? Sem problemas! Sincronizando nosso metabolismo com as idas e vindas de uma estrela da sequência principal do tipo G (também conhecida como Sol)? Feito! Respirando os gases residuais de algas e plantas? Você está fazendo isso agora!
+Mas o que acontece quando deixamos nosso planeta natal para novos destinos no sistema solar? Tornamo-nos ainda mais poderosos? De certa forma, sim; O astronauta da Apollo 14, Alan Shepard, acertou uma bola de golfe a 4 km da superfície lunar! Mas de outras maneiras, não; décadas de pesquisa mostraram que a massa óssea e muscular diminui no espaço e que o ambiente de radiação espacial apresenta riscos para a saúde humana a longo prazo.
+Existem muitos riscos associados à exploração espacial humana de longa distância e à habitação humana fora da Terra. Eles incluem experimentar microgravidade em voo, hipergravidade durante o lançamento e pouso, sono interrompido e ritmos circadianos, suprimentos limitados, acesso restrito a cuidados médicos, exposição aos micróbios encontrados em naves espaciais e muito mais.
+Felizmente, uma grande quantidade de dados foi coletada sobre como outros organismos respondem a ambientes de voos espaciais. Plantas, micróbios, moscas e vermes voaram no espaço para fornecer dados que nos permitem entender como eles se adaptam a esse ambiente único.
+Além disso, muitos organismos modelo têm sido usados para entender como os voos espaciais impactam a biologia e as ramificações para a exploração do
+sistema solar. Os roedores são usados para modelar a fisiologia dos mamíferos. Moscas da fruta e nematóides são bons modelos para processos
+que ocorrem em organismos complexos. Os modelos de plantas são estudados com vista a futuros sistemas de produção de culturas no espaço. Além disso, os micróbios são estudados não apenas pelos possíveis danos que representam, mas também por seu potencial como chassis de biofabricação.
+### Objetivos
+Seu desafio é projetar uma plataforma (digital ou analógica) que permita aos usuários explorar os estresses ambientais das viagens espaciais, entender como diversos organismos lidam com esses estresses e, em seguida, construir um
+“Super-herói da Biologia Espacial” combinando recursos desses organismos. O objetivo principal é informar os usuários sobre os desafios dos voos espaciais e como os cientistas estão realizando experimentos biológicos no espaço, e empolgar os usuários sobre a exploração espacial e a pesquisa biológica que possibilitará futuras missões.
+### Considerações potenciais
+Ao desenvolver sua plataforma, você pode (mas não é obrigado a) considerar o seguinte:
+- Sua plataforma pode ser digital ou analógica. Os formatos potenciais podem ser um jogo de tabuleiro, jogo de cartas, site, jogo de computador ou qualquer outro formato que atenda aos objetivos acima.
+- Para encontrar recursos adicionais, você pode realizar uma pesquisa na Internet para coletar informações relevantes que possam ser úteis. As palavras-chave de pesquisa em potencial podem incluir:
+- Características biológicas fundamentais do voo espacial
+- Avançando o campo para permitir a exploração do espaço profundo
+- Para dados e recursos relacionados a este desafio, consulte a guia Recursos na parte superior da página. Mais recursos podem ser adicionados antes do início do hackathon.A NASA não endossa qualquer entidade não governamental dos EUA e não é responsável pelas informações contidas em sites não governamentais dos EUA. Para sites não governamentais dos EUA, os participantes devem cumprir todos os parâmetros de uso de dados desse site específico.
