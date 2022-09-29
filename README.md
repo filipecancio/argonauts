@@ -1,4 +1,5 @@
 # space-apps
+[![dashboard](https://img.shields.io/badge/team-dashboard-blue)](https://2022.spaceappschallenge.org/challenges/2022-challenges/space-biology-superhero/teams/argonauts-3/project)
 
 ## CHALLENGE: Build a Space Biology Superhero :bug:
 
