@@ -1,4 +1,4 @@
-# space-apps
+# Argonauts
 [![dashboard](https://img.shields.io/badge/team-dashboard-blue)](https://2022.spaceappschallenge.org/challenges/2022-challenges/space-biology-superhero/teams/argonauts-3/project)
 [![challenge](https://img.shields.io/badge/challenge-description-blue)]([https://2022.spaceappschallenge.org/challenges/2022-challenges/space-biology-superhero/teams/argonauts-3/project](https://2022.spaceappschallenge.org/challenges/2022-challenges/space-biology-superhero/details))
 
