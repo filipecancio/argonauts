@@ -26,11 +26,10 @@ Your challenge is to design a platform (digital or analog) that allows users to 
 ### Potential Considerations
 As you develop your platform, you may (but are not required to) consider the following:
 
-Your platform can be digital or analog. Potential formats could be a board game, card game, website, computer game, or any other format that meets the objectives above.
-To find additional resources, you could conduct an internet search to gather relevant information that may be useful. Potential search keywords could include:
-Fundamental biological features of spaceflight
-Advancing the field to enable deep-space exploration
-For data and resources related to this challenge, refer to the Resources tab at the top of the page. More resources may be added before the hackathon begins.
+- Your platform can be digital or analog. Potential formats could be a board game, card game, website, computer game, or any other format that meets the objectives above.
+- To find additional resources, you could conduct an internet search to gather relevant information that may be useful. Potential search keywords could include:
+  - Fundamental biological features of spaceflight
+  - Advancing the field to enable deep-space exploration For data and resources related to this challenge, refer to the Resources tab at the top of the page. More resources may be added before the hackathon begins.
 
 > NASA does not endorse any non-U.S. Government entity and is not responsible for information contained on non-U.S. Government websites. For non-U.S. Government websites, participants must comply with any data use parameters of that specific website.
 
