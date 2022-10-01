@@ -1,4 +1,4 @@
-import 'package:argonauts/ui/page/home.dart';
+import 'package:argonauts/ui/page/info.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -11,11 +11,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Argonauts',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const HomePage(title: 'Flutter Demo Home Page'),
+      home: const InfoPage(title: 'Argonauts'),
     );
   }
 }
