@@ -1,4 +1,4 @@
-import 'package:argonauts/ui/page/info.dart';
+import 'package:argonauts/ui/page/home.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const InfoPage(title: 'Argonauts'),
+      home: const HomePage(title: 'Argonauts'),
     );
   }
 }
