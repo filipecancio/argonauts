@@ -2,6 +2,7 @@
 [![dashboard](https://img.shields.io/badge/team-dashboard-blue)](https://2022.spaceappschallenge.org/challenges/2022-challenges/space-biology-superhero/teams/argonauts-3/project)
 [![challenge](https://img.shields.io/badge/challenge-description-blue)](https://2022.spaceappschallenge.org/challenges/2022-challenges/space-biology-superhero/details)
 [![miro](https://img.shields.io/badge/board-miro-blue)](https://miro.com/welcomeonboard/WHdwTVdpTUM3TjFPZFgzWUFGcjlNaTJxajFDdVNheVluNEdYN0RHcUxoUGZtTURCUUNwSEhPRFJuZDFPUU1mdXw0OTM3MTIzN3wy?share_link_id=621817333046)
+[![figma](https://img.shields.io/badge/project-figma-blue)]([https://miro.com/welcomeonboard/WHdwTVdpTUM3TjFPZFgzWUFGcjlNaTJxajFDdVNheVluNEdYN0RHcUxoUGZtTURCUUNwSEhPRFJuZDFPUU1mdXw0OTM3MTIzN3wy?share_link_id=621817333046](https://www.figma.com/file/tRPJfEy26PFu9skCCvn7AQ/Untitled?node-id=0%3A1))
 
 ## CHALLENGE: Build a Space Biology Superhero :bug:
 
