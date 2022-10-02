@@ -1,26 +1,26 @@
+import 'package:argonauts/common/spaceship/spaceship_controller.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:rive/rive.dart';
 
-class Spaceship extends StatefulWidget {
+class Spaceship extends GetView<SpaceshipController> {
   const Spaceship({Key? key}) : super(key: key);
 
   @override
-  _SpaceshipState createState() => _SpaceshipState();
-}
-
-class _SpaceshipState extends State<Spaceship> {
-  @override
   Widget build(BuildContext context) {
-    return Scaffold(
-        appBar: AppBar(
-          title: const Text('Title'),
+    return Stack(children: [
+      SlideTransition(
+        position: controller.animation,
+        child: Padding(
+          padding: EdgeInsets.all(12),
+          child: SizedBox(
+              height: 60,
+              child: Container(
+                color: Colors.white,
+              )),
         ),
-        body: Center(
-          child: RiveAnimation.network(
-            'https://cdn.rive.app/animations/vehicles.riv',
-            fit: BoxFit.cover,
-          ),
-        ));
+      ),
+    ]);
   }
 }

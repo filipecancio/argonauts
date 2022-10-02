@@ -1,6 +1,7 @@
 import 'package:argonauts/common/argonaut/argonaut.dart';
 import 'package:argonauts/common/space/star.dart';
 import 'package:argonauts/common/space/star_field.dart';
+import 'package:argonauts/common/spaceship/spaceship.dart';
 import 'package:flutter/material.dart';
 import 'package:rive/rive.dart';
 
@@ -17,8 +18,14 @@ class _SpaceState extends State<Space> with TickerProviderStateMixin {
       body: Stack(
         children: [
           StarField(),
-          RiveAnimation.asset("assets/draw_order_demo_parallax.riv"),
-          Argonaut()
+          Container(
+            margin: EdgeInsets.all(50),
+            child: RiveAnimation.asset("assets/draw_order_demo_parallax.riv"),
+          ),
+          Center(
+            child: Argonaut(),
+          ),
+          Spaceship(),
         ],
       ),
     );

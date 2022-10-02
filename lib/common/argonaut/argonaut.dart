@@ -7,9 +7,11 @@ import 'package:get/get.dart';
 class Argonaut extends GetView<ArgonautController> {
   @override
   Widget build(BuildContext context) {
-    return SlideTransition(
-      child: SvgPicture.asset("/assets/argonaut_back.svg"),
-      position: controller.animation,
-    );
+    return Container(
+        margin: EdgeInsets.only(top: 0, bottom: 60, right: 160),
+        child: SlideTransition(
+          child: Image(image: AssetImage(controller.path)),
+          position: controller.animation,
+        ));
   }
 }
