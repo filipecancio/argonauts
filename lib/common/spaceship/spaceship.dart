@@ -10,17 +10,9 @@ class Spaceship extends GetView<SpaceshipController> {
   @override
   Widget build(BuildContext context) {
     return Stack(children: [
-      SlideTransition(
-        position: controller.animation,
-        child: Padding(
-          padding: EdgeInsets.all(12),
-          child: SizedBox(
-              height: 60,
-              child: Container(
-                color: Colors.white,
-              )),
-        ),
-      ),
+      ScaleTransition(
+          scale: controller.animation,
+          child: Image(image: AssetImage(controller.path))),
     ]);
   }
 }

@@ -1,30 +1,28 @@
 import 'package:argonauts/common/argonaut/argonaut.dart';
+import 'package:argonauts/common/space/space_controller.dart';
 import 'package:argonauts/common/space/star.dart';
 import 'package:argonauts/common/space/star_field.dart';
 import 'package:argonauts/common/spaceship/spaceship.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:rive/rive.dart';
 
-class Space extends StatefulWidget {
-  const Space({Key? key}) : super(key: key);
-
-  @override
-  _SpaceState createState() => _SpaceState();
-}
-
-class _SpaceState extends State<Space> with TickerProviderStateMixin {
+class Space extends GetView<SpaceController> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Stack(
         children: [
           StarField(),
-          Container(
-            margin: EdgeInsets.all(50),
-            child: RiveAnimation.asset("assets/draw_order_demo_parallax.riv"),
-          ),
           Center(
-            child: Argonaut(),
-          ),
+              child: ScaleTransition(
+            scale: controller.animation,
+            child: Stack(
+              children: [
+                RiveAnimation.asset("assets/draw_order_demo_parallax.riv"),
+                Argonaut()
+              ],
+            ),
+          )),
           Spaceship(),
         ],
       ),

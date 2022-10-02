@@ -13,8 +13,6 @@ class ArgonautController extends GetxController
     path = "assets/argonaut_back.png";
     state = false;
 
-    changeState();
-
     animationController = AnimationController(
       animationBehavior: AnimationBehavior.preserve,
       vsync: this,
