@@ -1,21 +1,24 @@
-import 'package:argonauts/ui/page/home.dart';
+import 'package:argonauts/common/argonaut/argonaut_controller.dart';
+import 'package:argonauts/common/space/space.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
+import 'package:get/get.dart';
+import 'package:rive/rive.dart';
 
-void main() {
-  runApp(const MyApp());
-}
+void main() => runApp(GetMaterialApp(
+      home: MyRiveAnimation(),
+    ));
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
-
+class MyRiveAnimation extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Argonauts',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
+    Get.put(ArgonautController());
+    return Scaffold(
+      body: Stack(
+        children: [
+          Space(),
+        ],
       ),
-      home: const HomePage(title: 'Argonauts'),
     );
   }
 }
