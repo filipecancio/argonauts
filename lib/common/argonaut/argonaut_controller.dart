@@ -4,15 +4,11 @@ import 'package:get/get.dart';
 class ArgonautController extends GetxController
     with GetSingleTickerProviderStateMixin {
   late AnimationController animationController;
-  late bool state;
-  late String path;
+  late RxBool state = false.obs;
   late Animation<Offset> animation;
 
   @override
   void onInit() async {
-    path = "assets/argonaut_back.png";
-    state = false;
-
     animationController = AnimationController(
       animationBehavior: AnimationBehavior.preserve,
       vsync: this,
@@ -27,12 +23,11 @@ class ArgonautController extends GetxController
     super.onInit();
   }
 
-  changeState() {
-    state = !state;
-    if (state) {
-      path = "assets/argonaut_front.png";
-    } else {
-      path = "assets/argonaut_back.png";
-    }
+  front() {
+    state.value = true;
+  }
+
+  back() {
+    state.value = false;
   }
 }

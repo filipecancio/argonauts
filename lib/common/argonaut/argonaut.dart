@@ -10,7 +10,10 @@ class Argonaut extends GetView<ArgonautController> {
     return Container(
         margin: EdgeInsets.only(top: 0, bottom: 60, right: 160),
         child: SlideTransition(
-          child: Image(image: AssetImage(controller.path)),
+          child: Obx(() => Image(
+              image: AssetImage(controller.state.value
+                  ? "assets/argonaut_front.png"
+                  : "assets/argonaut_back.png"))),
           position: controller.animation,
         ));
   }

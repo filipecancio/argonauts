@@ -1,3 +1,4 @@
+import 'package:argonauts/common/analyser/analyser.dart';
 import 'package:argonauts/common/spaceship/spaceship_controller.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -9,12 +10,14 @@ class Spaceship extends GetView<SpaceshipController> {
 
   @override
   Widget build(BuildContext context) {
-    return Stack(children: [
-      Center(
-        child: ScaleTransition(
-            scale: controller.animation,
-            child: Image(image: AssetImage(controller.path))),
-      )
-    ]);
+    return ScaleTransition(
+        scale: controller.animation,
+        child: Stack(children: [
+          Center(child: Image(image: AssetImage(controller.path))),
+          Expanded(
+              child: Padding(
+                  padding: EdgeInsets.only(top: 270, left: 92, right: 90),
+                  child: Analyser())),
+        ]));
   }
 }

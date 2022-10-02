@@ -25,7 +25,17 @@ class Space extends GetView<SpaceController> {
           )),
           Expanded(
             child: Spaceship(),
-          )
+          ),
+          Positioned(
+              bottom: 24,
+              right: 24,
+              child: Obx(() => controller.hidden.value
+                  ? Container()
+                  : Icon(
+                      size: 50,
+                      controller.icon.value,
+                      color: Colors.white,
+                    )))
         ],
       ),
     );
