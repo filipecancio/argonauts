@@ -19,8 +19,8 @@ class SpaceshipController extends GetxController
     );
 
     animation = Tween(
-      begin: 2.0,
-      end: 1.0,
+      begin: 2.5,
+      end: 14.0,
     ).animate(animationController);
   }
 

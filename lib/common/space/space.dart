@@ -23,7 +23,9 @@ class Space extends GetView<SpaceController> {
               ],
             ),
           )),
-          Spaceship(),
+          Expanded(
+            child: Spaceship(),
+          )
         ],
       ),
     );
