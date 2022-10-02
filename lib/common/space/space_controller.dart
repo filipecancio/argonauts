@@ -11,6 +11,9 @@ class SpaceController extends GetxController with GetTickerProviderStateMixin {
   var size = 300.0;
   var hidden = true.obs;
   Rx<IconData> icon = Icons.arrow_forward_ios.obs;
+
+  RxBool hyperspeed = false.obs;
+
   @override
   void onInit() async {
     animationController = AnimationController(

@@ -7,6 +7,7 @@ class SpaceshipController extends GetxController
   late AnimationController animationController;
   late Animation<double> animation;
   late String path;
+  late RxBool visible = false.obs;
 
   @override
   void onInit() async {

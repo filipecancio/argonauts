@@ -2,6 +2,7 @@ import 'dart:io';
 
 import 'package:argonauts/common/argonaut/argonaut_controller.dart';
 import 'package:argonauts/common/message/message.dart';
+import 'package:argonauts/common/message/message_controller.dart';
 import 'package:argonauts/common/space/space_controller.dart';
 import 'package:argonauts/common/spaceship/spaceship_controller.dart';
 import 'package:flutter/animation.dart';
@@ -16,21 +17,46 @@ class FlowController extends GetxController {
 
   var spaceContoller = Get.find<SpaceController>();
   var argonautContoller = Get.find<ArgonautController>();
+  var messageContoller = Get.find<MessageController>();
   var spaceshipController = Get.find<SpaceshipController>();
 
   late List<VoidCallback> flow;
 
   @override
   void onInit() async {
+    spaceshipController.visible.value = false;
     spaceContoller.zoomIn();
     argonautContoller.back();
     spaceContoller.show(Icons.play_arrow);
+    messageContoller.show([
+      "In a far quadrant of the universe",
+      "You are happy!",
+      "you are coming home..."
+    ]);
+
     flow = [
       () {
+        spaceshipController.visible.value = true;
         //Tela inicial
+        spaceContoller.hide();
         spaceContoller.zoomIn();
-        MessageController.showCustomToast(context, "message");
         argonautContoller.state.value = true;
+      },
+      () {
+        //Tela teste
+        spaceContoller.zoomOut();
+        messageContoller.show([
+          "In a far quadrant of the universe",
+          "You are happy!",
+          "you are coming home..."
+        ]);
+        argonautContoller.state.value = false;
+      },
+      () {
+        spaceContoller.hyperspeed.value = true;
+      },
+      () {
+        spaceContoller.hyperspeed.value = false;
       },
       () {
         //Tela final

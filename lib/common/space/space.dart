@@ -1,4 +1,5 @@
 import 'package:argonauts/common/argonaut/argonaut.dart';
+import 'package:argonauts/common/message/message.dart';
 import 'package:argonauts/common/space/space_controller.dart';
 import 'package:argonauts/common/space/star.dart';
 import 'package:argonauts/common/space/star_field.dart';
@@ -12,13 +13,22 @@ class Space extends GetView<SpaceController> {
     return Scaffold(
       body: Stack(
         children: [
-          StarField(),
+          Obx(() => controller.hyperspeed.value
+              ? Image.asset(
+                  "images/hyperspeed.gif",
+                  height: 125.0,
+                  width: 125.0,
+                )
+              : StarField()),
           Center(
               child: ScaleTransition(
             scale: controller.animation,
             child: Stack(
               children: [
-                RiveAnimation.asset("assets/draw_order_demo_parallax.riv"),
+                Obx(() => controller.hyperspeed.value
+                    ? Container()
+                    : RiveAnimation.asset(
+                        "assets/draw_order_demo_parallax.riv")),
                 Argonaut()
               ],
             ),
@@ -35,7 +45,8 @@ class Space extends GetView<SpaceController> {
                       size: 50,
                       controller.icon.value,
                       color: Colors.white,
-                    )))
+                    ))),
+          Positioned(bottom: 150, left: 24, child: Message())
         ],
       ),
     );
