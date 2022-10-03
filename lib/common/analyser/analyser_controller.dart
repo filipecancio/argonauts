@@ -8,4 +8,6 @@ class AnalyserController extends GetxController {
   void onInit() async {
     super.onInit();
   }
+
+  void showDialog() {}
 }

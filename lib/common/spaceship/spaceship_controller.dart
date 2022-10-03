@@ -6,13 +6,11 @@ class SpaceshipController extends GetxController
     with GetTickerProviderStateMixin {
   late AnimationController animationController;
   late Animation<double> animation;
-  late String path;
   late RxBool visible = false.obs;
+  late RxInt state = 0.obs;
 
   @override
   void onInit() async {
-    path = "assets/spaceship.png";
-
     animationController = AnimationController(
       animationBehavior: AnimationBehavior.preserve,
       vsync: this,

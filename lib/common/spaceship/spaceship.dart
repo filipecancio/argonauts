@@ -10,16 +10,55 @@ class Spaceship extends GetView<SpaceshipController> {
 
   @override
   Widget build(BuildContext context) {
-    return Obx(() => controller.visible.value
-        ? ScaleTransition(
-            scale: controller.animation,
-            child: Stack(children: [
-              Center(child: Image(image: AssetImage(controller.path))),
-              Container(
-                  child: Padding(
-                      padding: EdgeInsets.only(top: 190, left: 160, right: 158),
-                      child: Analyser())),
-            ]))
-        : Container());
+    return Padding(
+      padding: EdgeInsets.only(left: 50, right: 40, top: 100),
+      child: Obx(() => controller.visible.value
+          ? ScaleTransition(
+              scale: controller.animation,
+              child: Stack(children: [
+                Center(
+                    child: Obx(() => Image(
+                        image: AssetImage(controller.state.value == 0
+                            ? "assets/spaceship_01.png"
+                            : controller.state.value == 1
+                                ? "assets/spaceship_02.png"
+                                : controller.state.value == 2
+                                    ? "assets/spaceship_03.png"
+                                    : "assets/spaceship_04.png")))),
+                Container(
+                    child: Padding(
+                        padding:
+                            EdgeInsets.only(top: 180, left: 110, right: 115),
+                        child: Analyser())),
+                Obx(() => controller.state.value != 0
+                    ? Container(
+                        padding:
+                            EdgeInsets.only(top: 430, left: 150, right: 150),
+                        child: Obx(() => Image(
+                            image: AssetImage(controller.state.value == 0
+                                ? "assets/organism_01.png"
+                                : controller.state.value == 1
+                                    ? "assets/organism_01.png"
+                                    : controller.state.value == 2
+                                        ? "assets/organism_02.png"
+                                        : "assets/organism_03.png"))))
+                    : Container()),
+                Obx(() => controller.state.value != 0
+                    ? Container(
+                        padding:
+                            EdgeInsets.only(top: 488, left: 140, right: 140),
+                        child: Obx(() => Image(
+                            colorBlendMode: BlendMode.lighten,
+                            image: AssetImage(controller.state.value == 0
+                                ? "assets/organism_01.png"
+                                : controller.state.value == 1
+                                    ? "assets/organism_01.png"
+                                    : controller.state.value == 2
+                                        ? "assets/organism_02.png"
+                                        : "assets/organism_03.png"))))
+                    : Container()),
+              ]))
+          : Container()),
+    );
   }
 }
