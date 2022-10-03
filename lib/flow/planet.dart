@@ -85,22 +85,6 @@ class Planet {
             });
       },
       () {
-        showDialog(
-            context: Get.context!,
-            builder: (BuildContext context) {
-              return CustomDialogBox(
-                title: name,
-                descriptions: text,
-                text: "Continue",
-                rive: RiveAnimation.asset(id == 1
-                    ? "assets/organism_01.riv"
-                    : id == 2
-                        ? "assets/organism_02.riv"
-                        : "assets/organism_03.riv"),
-              );
-            });
-      },
-      () {
         c.argonautContoller.back();
 
         c.spaceContoller.write("Starting our new route...");

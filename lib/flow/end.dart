@@ -12,8 +12,8 @@ class End {
         c.argonautContoller.back();
         c.spaceContoller.zoomIn();
 
+        c.spaceContoller.planet.value = 5;
         c.spaceshipController.visible.value = false;
-        c.spaceContoller.planet.value = 4;
 
         c.spaceContoller.write(
           "Finally whe're home!",
@@ -23,6 +23,7 @@ class End {
         c.spaceContoller.write(
           "Our friends at NASA would be proud of us!",
         );
+        c.spaceContoller.hide();
       },
     ];
   }
