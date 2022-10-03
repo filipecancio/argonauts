@@ -4,6 +4,7 @@ import 'package:argonauts/common/argonaut/argonaut_controller.dart';
 import 'package:argonauts/common/message/message.dart';
 import 'package:argonauts/common/space/space_controller.dart';
 import 'package:argonauts/common/spaceship/spaceship_controller.dart';
+import 'package:argonauts/flow/end.dart';
 import 'package:argonauts/flow/organism.dart';
 import 'package:argonauts/flow/planet.dart';
 import 'package:argonauts/flow/start.dart';
@@ -72,26 +73,7 @@ class FlowController extends GetxController {
     flow.addAll(Hiperspeed().flow());
     flow.addAll(p2.flow());
     flow.addAll(p3.flow());
-    flow.addAll([
-      () {
-        spaceContoller.hyperspeed.value = false;
-        spaceContoller.hide();
-        argonautContoller.back();
-        spaceContoller.zoomIn();
-
-        spaceshipController.visible.value = false;
-        spaceContoller.planet.value = 4;
-
-        spaceContoller.write(
-          "Finally whe're home!",
-        );
-      },
-      () {
-        spaceContoller.write(
-          "Our friends at NASA would be proud of us!",
-        );
-      },
-    ]);
+    flow.addAll(End().flow());
   }
 
   int i = 0;
